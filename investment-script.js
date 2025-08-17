@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const stepDetails = {
             1: {
                 title: "Choose Your Crypto",
-                details: "Consider your investment goals, risk tolerance, and market conditions. Bitcoin is great for long-term growth, Ethereum for smart contracts, USDT for stability, and Solana for fast transactions.",
+                details: "Consider your investment goals, risk tolerance, and market conditions. Bitcoin is great for long-term growth, Ethereum for smart contracts, Dogecoin for community-driven investments, and Solana for fast transactions.",
                 tips: ["Research each cryptocurrency", "Consider market timing", "Diversify your portfolio"]
             },
             2: {
@@ -509,9 +509,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Action button functionality
         actionBtn.addEventListener('click', () => {
-            showNotification(`Redirecting to ${platform}...`, 'info');
             modal.remove();
-            // In a real app, this would redirect to the actual social platform
+            if (platform === 'Discord') {
+                window.open('https://discord.gg/DjPvMJRPHF', '_blank', 'noopener,noreferrer');
+            } else if (platform === 'Telegram') {
+                window.open('https://t.me/seanjusticefr', '_blank', 'noopener,noreferrer');
+            } else {
+                showNotification(`Redirecting to ${platform}...`, 'info');
+            }
         });
     }
     

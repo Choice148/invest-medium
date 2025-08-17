@@ -5,7 +5,7 @@ A comprehensive investment page that provides users with access to cryptocurrenc
 ## 🚀 Features
 
 ### Core Investment Features
-- **Multiple Cryptocurrency Options** - Bitcoin (BTC), Ethereum (ETH), Tether (USDT), and Solana (SOL)
+- **Multiple Cryptocurrency Options** - Bitcoin (BTC), Ethereum (ETH), Dogecoin (DOGE), and Solana (SOL)
 - **Wallet Addresses** - Copy-to-clipboard functionality for easy access
 - **QR Codes** - Clickable QR codes that open in enlarged modal for easy scanning
 - **Investment Tips** - Specific guidance for each cryptocurrency type
